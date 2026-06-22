@@ -32,11 +32,8 @@ export default function App() {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          TONY'S
-          <br />
-          ANGEL
-          <br />
-          TATTOOZ
+          <h1>TONY'S ANGEL TATTOOZ</h1>
+
         </motion.h1>
 
         <motion.p

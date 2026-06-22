@@ -49,10 +49,20 @@ body {
 }
 
 h1 {
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  line-height: 0.92;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
   letter-spacing: -0.06em;
   font-weight: 900;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 .tagline {
@@ -118,7 +128,7 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  font-size: 20vw;
+  font-size: 14vw;
   font-weight: 900;
 
   color: rgba(0, 0, 0, 0.025);
