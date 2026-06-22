@@ -14,9 +14,9 @@ body,
 }
 
 body {
+  font-family: "Inter", sans-serif;
   background: #ffffff;
   color: #000000;
-  font-family: "Inter", sans-serif;
   overflow: hidden;
 }
 
@@ -26,95 +26,88 @@ body {
   height: 100vh;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
-  overflow: hidden;
   background: white;
+  overflow: hidden;
 }
 
 .content {
   position: relative;
-  z-index: 5;
+  z-index: 10;
   text-align: center;
   padding: 2rem;
 }
 
 .studioLabel {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.45rem;
+  letter-spacing: 0.4rem;
   color: #777;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  font-size: clamp(4rem, 11vw, 9rem);
-  line-height: 0.88;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
   font-weight: 900;
-  letter-spacing: -0.08em;
 }
 
 .tagline {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
   color: #666;
-  font-size: 1rem;
+  font-weight: 400;
 }
 
 .divider {
   height: 1px;
   background: #000;
-  margin: 2.5rem auto;
+  margin: 1.75rem auto;
 }
 
 .comingSoon {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.45rem;
 }
 
 .instagramButton {
-  width: fit-content;
+  margin: 2rem auto 0;
 
-  margin: 3rem auto 0;
-
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.3rem;
 
   border-radius: 999px;
 
   text-decoration: none;
-
   color: #000;
-  background: rgba(0, 0, 0, 0.03);
 
+  background: rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.08);
 
-  backdrop-filter: blur(10px);
-
-  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.instagramButton svg {
-  font-size: 1.1rem;
-}
-
-.instagramButton span {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.15rem;
+  transition: all 0.35s ease;
 }
 
 .instagramButton:hover {
   background: #000;
-  color: #fff;
+  color: white;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
 
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.12),
-    0 25px 60px rgba(0, 0, 0, 0.08);
+.instagramButton svg {
+  font-size: 1rem;
+}
+
+.instagramButton span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
 }
 
 .backgroundText {
@@ -122,13 +115,13 @@ h1 {
   inset: 0;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
-  font-size: 30vw;
+  font-size: 20vw;
   font-weight: 900;
 
-  color: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.025);
 
   user-select: none;
   pointer-events: none;
@@ -140,14 +133,14 @@ h1 {
   position: absolute;
   inset: 0;
 
-  opacity: 0.025;
+  opacity: 0.02;
 
   background-image:
     radial-gradient(circle, #000 1px, transparent 1px);
 
   background-size: 30px 30px;
 
-  animation: grain 10s linear infinite;
+  animation: grain 12s linear infinite;
 }
 
 @keyframes grain {
@@ -174,19 +167,19 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: clamp(3.2rem, 18vw, 5rem);
-  }
-
-  .comingSoon {
-    letter-spacing: 0.4rem;
+    font-size: 3rem;
   }
 
   .backgroundText {
-    font-size: 45vw;
+    font-size: 38vw;
+  }
+
+  .comingSoon {
+    letter-spacing: 0.25rem;
   }
 
   .instagramButton {
-    padding: 0.9rem 1.25rem;
+    padding: 0.85rem 1.1rem;
   }
 
   .instagramButton span {
