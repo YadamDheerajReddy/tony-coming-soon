@@ -57,14 +57,6 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: clamp(1.4rem, 6vw, 2rem);
-    white-space: normal;
-    text-align: center;
-  }
-}
-
 .tagline {
   margin-top: 1.25rem;
   font-size: 0.9rem;
@@ -177,7 +169,9 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: clamp(1.1rem, 4.8vw, 1.8rem);
+    white-space: nowrap;
+    text-align: center;
   }
 
   .backgroundText {
